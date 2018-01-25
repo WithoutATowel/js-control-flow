@@ -11,7 +11,11 @@ function pluralizer() {
 	if (num == 1) {
 		console.log("There is 1 " + thing);
 	} else {
-		console.log("There are " + num + " " + thing + "s");
+		if (thing[thing.length - 1] === "s") {
+			console.log("There are " + num + " " + thing);
+		} else {
+			console.log("There are " + num + " " + thing + "s");
+		}
 	}
 }
 

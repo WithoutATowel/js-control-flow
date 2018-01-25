@@ -20,7 +20,7 @@ function letterGrader() {
         default:
             letterGrade = "F";
     }
-    alert("The letter grade is: " + letterGrade);
+    console.log("The letter grade is: " + letterGrade);
 }
 
 letterGrader()

@@ -8,3 +8,14 @@ function fToC () {
 }
 
 fToC();
+
+function cToF () {
+	var tempC = parseInt(prompt("What's the temperature in Celsius?"));
+	while(isNaN(tempC)) {
+		var tempC = parseInt(prompt("That wasn't a number. What's the temperature in Celsius?"));
+	}
+	var tempF = (((tempC * 9) / 5) + 32).toFixed(1);
+	console.log(tempC + " degrees Celsius is " + tempF + " degrees Celsius");
+}
+
+cToF();
